@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import "../style/splashscreen.scss";
 
-export default function App() {
+export default function SplashScreen() {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {

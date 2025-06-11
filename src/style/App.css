@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+#root {
+    max-width: 430px;
+    min-height: 900px;
+
+    margin: 0 auto;
+
+
+}
