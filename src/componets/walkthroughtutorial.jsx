@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../style/walkthrough.scss';
 import { FaBroadcastTower, FaHeart, FaMusic } from 'react-icons/fa';
-
+import { Link } from "react-router";
 const slides = [
     {
         image: '/Asset 3.png',
@@ -55,8 +55,9 @@ export default function WalkThroughTutorial() {
                     </button>
                 ))}
             </div>
-
-            <button className="skip-button">SKIP</button>
-        </div>
+            <Link to={`/player/`}>
+                <button className="skip-button">SKIP</button>
+            </Link>
+        </div >
     );
 }

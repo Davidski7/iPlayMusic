@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./pages/App.jsx";
 import WalkThrough from "./pages/walkthrough.jsx";
+import Player from "./pages/player.jsx";
 
 
 
@@ -12,7 +13,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/walkthrough" element={<WalkThrough />} />
-
+        <Route path="/player" element={<Player />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
