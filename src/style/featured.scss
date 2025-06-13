@@ -1,0 +1,46 @@
+.featuredContent {
+    padding: 16px;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #fff;
+}
+
+.sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    background: linear-gradient(to right, #f43f5e, #f97316, #facc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+
+    margin-bottom: 24px;
+}
+
+.cardImage {
+    width: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.cardContent {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: white;
+}
+
+.cardTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cardCategory {
+    font-size: 14px;
+    opacity: 0.9;
+}

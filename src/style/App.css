@@ -8,7 +8,8 @@
 
 #root {
     max-width: 430px;
-    min-height: 900px;
+    min-height: 1000px;
+    max-height: 1200px;
 
     margin: 0 auto;
 

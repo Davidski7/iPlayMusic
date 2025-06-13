@@ -14,10 +14,13 @@ export default function Header() {
     };
 
     return (
-        <FaLongArrowAltLeft
-            onClick={goback}
-            className="back-button"
-            size={50}
-        />
+        <>
+            <FaLongArrowAltLeft
+                onClick={goback}
+                className="back-button"
+                size={50}
+            />
+            <h1>Events Feed</h1>
+        </>
     )
 }

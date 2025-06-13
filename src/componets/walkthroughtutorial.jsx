@@ -55,7 +55,7 @@ export default function WalkThroughTutorial() {
                     </button>
                 ))}
             </div>
-            <Link to={`/player/`}>
+            <Link to={`/featured/`}>
                 <button className="skip-button">SKIP</button>
             </Link>
         </div >
