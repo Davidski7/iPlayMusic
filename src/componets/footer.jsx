@@ -6,7 +6,7 @@ import "../style/footer.scss";
 const Footer = () => {
     return (
         <div className="footer">
-            <NavLink to="/" className="footer-icon"><FaHeartbeat /></NavLink>
+            <NavLink to="/playlists" className="footer-icon"><FaHeartbeat /></NavLink>
             <NavLink to="/categories" className="footer-icon"><FaMicrophone /></NavLink>
             <NavLink to="/featured" className="footer-icon active-center"><FaRecordVinyl /></NavLink>
             <NavLink to="/categories" className="footer-icon"><FaMusic /></NavLink>

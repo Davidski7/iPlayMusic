@@ -7,6 +7,8 @@ import Player from "./pages/player.jsx";
 import EventFeedPage from "./pages/eventfeedpage.jsx";
 import Featured from "./pages/featured.jsx";
 import Categories from "./pages/categories.jsx";
+import PlayLists from "./pages/playlists.jsx";
+PlayLists
 
 
 createRoot(document.getElementById("root")).render(
@@ -19,6 +21,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/eventfeedpage" element={<EventFeedPage />} />
         <Route path="/featured" element={<Featured />} />
         <Route path="/categories" element={<Categories />} />
+        <Route path="/playlists" element={<PlayLists />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
