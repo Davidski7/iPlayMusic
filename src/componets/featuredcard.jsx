@@ -6,6 +6,7 @@ const FeaturedCard = () => {
     return (
         <div className="featuredContent">
             <Header />
+            <h2 className="page-title">Featured</h2>
 
             <div className="card">
                 <img
@@ -14,7 +15,8 @@ const FeaturedCard = () => {
                     className="cardImage"
                 />
                 <div className="cardContent">
-                    <h2 className="cardTitle">The Greatest Showman</h2>
+                    <h2 className="cardTitle">The Greatest <br />Showman</h2>
+
                     <p className="cardCategory">Soundtrack</p>
                 </div>
             </div>

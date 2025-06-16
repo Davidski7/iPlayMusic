@@ -6,7 +6,7 @@ import WalkThrough from "./pages/walkthrough.jsx";
 import Player from "./pages/player.jsx";
 import EventFeedPage from "./pages/eventfeedpage.jsx";
 import Featured from "./pages/featured.jsx";
-
+import Categories from "./pages/categories.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -18,6 +18,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/player" element={<Player />} />
         <Route path="/eventfeedpage" element={<EventFeedPage />} />
         <Route path="/featured" element={<Featured />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

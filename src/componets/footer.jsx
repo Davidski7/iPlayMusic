@@ -7,8 +7,8 @@ const Footer = () => {
     return (
         <div className="footer">
             <NavLink to="/" className="footer-icon"><FaHeartbeat /></NavLink>
-            <NavLink to="/mic" className="footer-icon"><FaMicrophone /></NavLink>
-            <NavLink to="/player" className="footer-icon active-center"><FaRecordVinyl /></NavLink>
+            <NavLink to="/categories" className="footer-icon"><FaMicrophone /></NavLink>
+            <NavLink to="/featured" className="footer-icon active-center"><FaRecordVinyl /></NavLink>
             <NavLink to="/categories" className="footer-icon"><FaMusic /></NavLink>
             <NavLink to="/settings" className="footer-icon"><FaCog /></NavLink>
         </div>

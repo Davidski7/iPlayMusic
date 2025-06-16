@@ -20,7 +20,6 @@ export default function Header() {
                 className="back-button"
                 size={50}
             />
-            <h1>Events Feed</h1>
         </>
     )
 }
