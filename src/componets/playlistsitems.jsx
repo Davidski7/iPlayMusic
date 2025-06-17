@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from '../componets/header'
+import Header from '../componets/header';
+import { CiPlay1 } from "react-icons/ci";
 
 const songs = [
     { title: "Old Town Road", artist: "Billy Ray Cyrus", time: "3 : 58" },
@@ -30,7 +31,9 @@ export default function PlayListsItems() {
                     {songs.map((song, index) => (
                         <div className="song" key={index}>
                             <div className="left">
-                                <div className="play-btn">▶</div>
+                                <div className="play-btn">
+                                    <CiPlay1 />
+                                </div>
                                 <div className="info">
                                     <div className="title">{song.title}</div>
                                     <div className="artist">{song.artist}</div>
