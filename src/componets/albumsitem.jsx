@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/albums.scss';
-import Header from '../componets/header'
+import Header from '../componets/header';
+import { Link } from "react-router";
 
 export default function AlbumsItem() {
     const featuredAlbums = [
@@ -14,25 +15,29 @@ export default function AlbumsItem() {
             cover: "/pexels-photo-1816943 (2).png",
             title: "Old Town Road",
             artist: "Billy Ray Cyrus",
-            songs: "12 Songs"
+            songs: "12 Songs",
+            link: "/album/old-town-road"
         },
         {
             cover: "/pexels-photo-2064522.png",
             title: "Victory Lab",
             artist: "Nipsey Hussle",
-            songs: "8 Songs"
+            songs: "8 Songs",
+            link: "/album/victory-lab"
         },
         {
             cover: "/pexels-photo-1844521.png",
             title: "Thank U, Next",
             artist: "Ariana Grande",
-            songs: "13 Songs"
+            songs: "13 Songs",
+            link: "/album/thank-u-next"
         },
         {
             cover: "/pexels-photo-2062347.png",
             title: "Death Race For Love",
             artist: "Juice WRLD",
-            songs: "11 Songs"
+            songs: "11 Songs",
+            link: "/album/death-race"
         }
     ];
 
@@ -50,7 +55,9 @@ export default function AlbumsItem() {
                 </div>
                 <div className="featured-albums">
                     {featuredAlbums.map((src, index) => (
-                        <img src={src} alt={`album-${index}`} key={index} className="featured-img" />
+                        <Link to={`/albumdetails/`}>
+                            <img src={src} alt={`album-${index}`} className="featured-img" />
+                        </Link>
                     ))}
                 </div>
             </div>
@@ -62,14 +69,14 @@ export default function AlbumsItem() {
                 </div>
                 <div className="new-releases">
                     {newReleases.map((item, index) => (
-                        <div className="release" key={index}>
+                        <Link to={item.link} key={index} className="release">
                             <img src={item.cover} alt={item.title} className="release-img" />
                             <div className="release-info">
                                 <div className="title">{item.title}</div>
                                 <div className="artist">{item.artist}</div>
                             </div>
                             <div className="songs">{item.songs}</div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

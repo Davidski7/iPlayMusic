@@ -9,7 +9,7 @@ import Featured from "./pages/featured.jsx";
 import Categories from "./pages/categories.jsx";
 import PlayLists from "./pages/playlists.jsx";
 import Albums from "./pages/albums.jsx";
-PlayLists
+import AlbumDetails from "./pages/albumdetails.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -24,6 +24,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/categories" element={<Categories />} />
         <Route path="/playlists" element={<PlayLists />} />
         <Route path="/albums" element={<Albums />} />
+        <Route path="/albumdetails" element={<AlbumDetails />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
