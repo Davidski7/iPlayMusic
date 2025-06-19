@@ -6,14 +6,8 @@
     .album-header {
         position: relative;
         width: 100%;
-        height: 350px;
-        background: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        padding-bottom: 30px;
-        text-align: center;
+        height: 400px;
+        overflow: hidden;
 
         .album-image {
             position: absolute;
@@ -22,32 +16,60 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.5;
+            z-index: 1;
         }
 
-        .album-info {
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
+
+        .album-info-top {
+            position: absolute;
+            top: 70px;
+            left: 40px;
+            z-index: 3;
             color: white;
+            text-align: left;
 
             .album-label {
                 font-size: 14px;
                 letter-spacing: 2px;
-                opacity: 0.8;
-                margin-bottom: 8px;
+                opacity: 0.9;
+                margin-bottom: 6px;
             }
 
             .album-title {
-                font-size: 32px;
+                font-size: 36px;
                 font-weight: bold;
                 margin: 0;
             }
 
             .album-count {
-                margin-top: 5px;
-                font-size: 14px;
+                margin-top: 4px;
+                font-size: 18px;
+                opacity: 0.85;
+            }
+        }
+
+        .album-info-bottom {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 3;
+
+            .genre-title {
+                color: rgba(255, 255, 255, 0.541);
+                margin-bottom: 10px;
             }
 
             .genre-tags {
-                margin-top: 10px;
+                display: flex;
+                flex-wrap: wrap;
 
                 .tag {
                     background-color: #ff2e63;
@@ -55,7 +77,7 @@
                     border-radius: 20px;
                     padding: 6px 12px;
                     font-size: 12px;
-                    margin: 0 5px;
+                    margin: 4px 5px 0 0;
                     display: inline-block;
                 }
             }
@@ -103,6 +125,7 @@
                     .artist {
                         font-size: 12px;
                         color: gray;
+                        margin-top: 2px;
                     }
                 }
             }

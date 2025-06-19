@@ -17,11 +17,19 @@ export default function AlbumDetailsItem() {
         <div className="album-wrapper">
             <div className="album-header">
                 <img className="album-image" src="/pexels-photo-1771305 (1).png" alt="Album Cover" />
-                <Header />
-                <div className="album-info">
-                    <h2 className="album-label">Album</h2>
+
+                <div className="header-overlay">
+                    <Header />
+                </div>
+
+
+                <div className="album-info-top">
                     <h1 className="album-title">Old Town Road</h1>
                     <p className="album-count">12 Songs</p>
+                </div>
+
+                <div className="album-info-bottom">
+                    <h2 className="genre-title">Genres hastags</h2>
                     <div className="genre-tags">
                         <span className="tag">#country</span>
                         <span className="tag">#country road</span>
