@@ -1,9 +1,8 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { FaLongArrowAltLeft } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
+import { FaLongArrowAltLeft, FaSearch } from "react-icons/fa";
 import "../style/header.scss";
 
-export default function Header() {
+export default function Header({ theme = "dark" }) {
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -15,12 +14,8 @@ export default function Header() {
     };
 
     return (
-        <div className="header-container">
-            <FaLongArrowAltLeft
-                onClick={goback}
-                className="back-button"
-                size={24}
-            />
+        <div className={`header-container ${theme === "light" ? "light" : ""}`}>
+            <FaLongArrowAltLeft onClick={goback} className="back-button" size={24} />
             <h2 className="header-title">{pageTitle}</h2>
             <FaSearch className="search-icon" size={20} />
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CiPlay1 } from "react-icons/ci";
+import { IoIosPlay } from "react-icons/io";
 import '../style/albumdetails.scss';
 import Header from '../componets/header';
 
@@ -19,7 +19,7 @@ export default function AlbumDetailsItem() {
                 <img className="album-image" src="/pexels-photo-1771305 (1).png" alt="Album Cover" />
 
                 <div className="header-overlay">
-                    <Header />
+                    <Header theme="light" />
                 </div>
 
 
@@ -43,7 +43,7 @@ export default function AlbumDetailsItem() {
                     <div className="song" key={index}>
                         <div className="left">
                             <div className="play-btn">
-                                <CiPlay1 />
+                                <IoIosPlay />
                             </div>
                             <div className="info">
                                 <div className="title">{song.title}</div>

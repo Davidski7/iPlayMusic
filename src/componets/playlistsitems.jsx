@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../componets/header';
-import { CiPlay1 } from "react-icons/ci";
+import { IoIosPlay } from "react-icons/io";
 
 const songs = [
     { title: "Old Town Road", artist: "Billy Ray Cyrus", time: "3 : 58" },
@@ -21,7 +21,7 @@ export default function PlayListsItems() {
             </div>
 
             <div className="content">
-                <Header />
+                <Header theme="light" />
                 <h1 className="main-title">Playlists</h1>
                 <img src="/photo-1545224144-b38cd309ef69.png" alt="cover" className="cover-img" />
                 <h2 className="subtitle">Top 50</h2>
@@ -32,7 +32,7 @@ export default function PlayListsItems() {
                         <div className="song" key={index}>
                             <div className="left">
                                 <div className="play-btn">
-                                    <CiPlay1 />
+                                    <IoIosPlay />
                                 </div>
                                 <div className="info">
                                     <div className="title">{song.title}</div>
